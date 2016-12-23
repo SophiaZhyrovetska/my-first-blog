@@ -1,6 +1,11 @@
-   <div>
-        <h1><a href="/">Sophie's Blog</a></h1>
-    </div>
+<html>
+        <head>
+            <title>Sophie's Blog</title>
+        </head>
+        <body>
+            <div>
+                <h1><a href="">Sophie's Blog</a></h1>
+            </div>
 
     {% for post in posts %}
         <div>
@@ -9,3 +14,5 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
+        </body>
+</html>
