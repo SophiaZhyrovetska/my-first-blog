@@ -1,0 +1,36 @@
+    {% load staticfiles %}
+    <html>
+        <head>
+            <title>Sophie Blog</title>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+            <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        </head>
+        <body>
+            <div class="page-header">
+                <table width="100%">
+                 <tr>
+                <td><h1><a href="/">Sophie's Blog</a></h1></td>
+  <td><table align= "center"  cellpadding="0" border="0" width="100%" >
+
+<td ><img src = "http://www.lattesloisirsculture.fr/images/llc/musique.jpg" width= "120" height= "120" alt="" class="round" align= "center"</td >
+<td ><img src = "http://cdn3s3.atrappo.com/media/cache/8d/88/8d8835198e7c3bb6bb6dc0569df5d7f5.png?v=1" width= "120" height= "120" alt="" class="round" align= "center"</td >
+<td ><img src = "http://st.depositphotos.com/1654249/2526/i/950/depositphotos_25268929-Stack-of-colorful-books-over-white.jpg" width= "120" height= "120" alt="" class="round" align= "center"</td >
+  </table>
+  </td>
+                 </tr>
+                </table>
+            </div>
+
+
+             <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
