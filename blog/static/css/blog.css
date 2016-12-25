@@ -1,5 +1,5 @@
-    h1 a {
-        color: #03AD9C;
+    h1 {
+        color: #000000;
         font-family: 'Lobster';
     }
 
@@ -12,8 +12,8 @@
     .page-header {
         background-color: #03AD9C;
         margin-top: 0;
-        border: 7px ridge #02524A;
-        box-shadow: 0 0 20px #026B61;
+        border: 5px ridge #02524A;
+        box-shadow: 0 0 25px #026B61;
 
 
         padding: 20px 20px 20px 40px;
@@ -33,11 +33,12 @@
 
     h1, h2, h3, h4 {
         font-family: 'Lobster', cursive;
+
     }
 
     .date {
         float: right;
-        color: #828282;
+        color: #808080;
     }
 
     .save {
@@ -67,3 +68,11 @@
     border: 6px double #02524A;
     box-shadow: 0 0 20px #026B61;
    }
+    .glyphicon-pencil,.glyphicon-remove {
+    color: #000000;
+    font-size: 13pt;
+    }
+    .glyphicon-plus{
+    color: #BFE3DF;
+    font-size: 22pt;
+    }

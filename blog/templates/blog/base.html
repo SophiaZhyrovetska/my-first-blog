@@ -9,7 +9,10 @@
         </head>
         <body>
             <div class="page-header">
-                <table width="100%">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                {% endif %}
+                <table width="92%">
                  <tr>
                 <td><h1><a href="/">Sophie's Blog</a></h1></td>
   <td><table align= "center"  cellpadding="0" border="0" width="100%" >
